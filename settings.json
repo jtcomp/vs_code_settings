@@ -22,7 +22,37 @@
     "workbench.activityBar.visible": false,
 
     // Javascript Settings
+    "javascript.format.enable": true,
+    "eslint.format.enable": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+    },
 
+    // VSpaceMacs
+
+    "vspacecode.bindingOverrides": [
+        {
+            "keys": " ",
+            "name": "File Open",
+            "type": "command",
+            "command": "workbench.action.quickOpen"
+        },
+
+        {
+            "keys": "t",
+            "name": "Show Terminal",
+            "type": "command",
+            "command": "workbench.action.terminal.focus"
+        }
+
+        // todo add toggle file explorer, toggle terminal view, toggle through terminals
+    ],  
+
+    // Terminal Settings
+
+    "prettier.tabWidth": 4,
 
     // settings from https://hoitz.medium.com/improved-vim-setup-in-visual-studio-code-bc579501b80c 
     "vim.hlsearch": true,
@@ -182,5 +212,4 @@
             ]
         }
     ],
-    "javascript.updateImportsOnFileMove.enabled": "always"
 }
